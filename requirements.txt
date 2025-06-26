@@ -1,5 +1,3 @@
 opencv-python
 Pillow
 datetime
-sys
-tkinter
