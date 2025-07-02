@@ -71,7 +71,6 @@ class AttendanceApp:
             bg="#f0f0f0"
         ).pack(pady=5)
 
-
         tk.Button(frame_buttons, text="4. Run Attendance Recognition", font=("Arial", 14), width=30,
                   command=self.run_recognition_thread).pack(pady=10)
 

@@ -10,7 +10,7 @@ def capture_images_from_camera(name_folder, image_type="raw", output_dir="data/r
     save_path = os.path.join(output_dir, image_type, name_folder)
     os.makedirs(save_path, exist_ok=True)
 
-    # Đếm số ảnh hiện có trong folder để tránh overwrite
+    # Đếm số ảnh hiện có trong folder
     existing_images = [f for f in os.listdir(save_path) if f.endswith(('.jpg', '.png', '.jpeg'))]
     start_idx = len(existing_images)
 

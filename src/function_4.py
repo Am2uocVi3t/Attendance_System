@@ -59,7 +59,7 @@ def recognize_faces_in_frame(frame, recognizer, label_map, log_func, th, enable_
     global detection_timers
     gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
     face_cascade = cv2.CascadeClassifier(cv2.data.haarcascades + "haarcascade_frontalface_default.xml")
-    faces = face_cascade.detectMultiScale(gray, scaleFactor=1.05, minNeighbors=5)
+    faces = face_cascade.detectMultiScale(gray, scaleFactor=1.05, minNeighbors=6, minSize=(20,20))
 
     current_time = time.time()
 
